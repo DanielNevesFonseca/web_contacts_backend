@@ -35,6 +35,6 @@ export class SessionService {
       process.env.SECRET_KEY!,
       { subject: foundUser.id.toString(), expiresIn: process.env.EXPIRES_IN! },
     );
-    return { token };
+    return { token, userId: foundUser.id };
   }
 }

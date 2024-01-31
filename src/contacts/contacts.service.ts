@@ -150,7 +150,7 @@ export class ContactsService {
     });
 
     if (!signedUser) {
-      throw new HttpException('Invalid credentials to READ Contact', 401);
+      throw new HttpException('Invalid credentials to Delete Contact', 401);
     }
 
     let foundContact = signedUser.contacts.find(
