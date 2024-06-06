@@ -1,8 +1,8 @@
 import { HttpException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { User } from './entities/users.entity';
+import { User } from './users.entity';
 import { Repository } from 'typeorm';
-import { Contact } from 'src/contacts/entities/contacts.entity';
+import { Contact } from 'src/contacts/contacts.entity';
 import { CreateUserDTO } from './dto/create-user.dto';
 import { UpdateUserDTO } from './dto/update-user.dto';
 import { classToPlain } from 'class-transformer';

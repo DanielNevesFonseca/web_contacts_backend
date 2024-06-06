@@ -1,5 +1,5 @@
 import { Exclude } from 'class-transformer';
-import { User } from 'src/users/entities/users.entity';
+import { User } from 'src/users/users.entity';
 import {
   Column,
   CreateDateColumn,
@@ -20,7 +20,7 @@ export class Contact {
   @Column({ type: 'varchar', length: 255 })
   email: string;
 
-  @Column({ type: 'char', length: 11 })
+  @Column({ type: 'varchar', length: 11 })
   phone_number: string | number;
 
   @CreateDateColumn()

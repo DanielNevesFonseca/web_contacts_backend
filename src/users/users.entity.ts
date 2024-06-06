@@ -1,6 +1,6 @@
 import { getRounds, hashSync } from 'bcryptjs';
 import { Exclude } from 'class-transformer';
-import { Contact } from 'src/contacts/entities/contacts.entity';
+import { Contact } from 'src/contacts/contacts.entity';
 import {
   BeforeInsert,
   BeforeUpdate,
@@ -27,7 +27,7 @@ export class User {
   @Column({ type: 'varchar', length: 255 })
   password: string;
 
-  @Column({ type: 'char', length: 11 })
+  @Column({ type: 'varchar', length: 11 })
   phone_number: string | number;
 
   @CreateDateColumn()

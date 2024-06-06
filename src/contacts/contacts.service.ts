@@ -1,8 +1,8 @@
 import { HttpException, HttpStatus, Injectable, Res } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { User } from 'src/users/entities/users.entity';
+import { User } from 'src/users/users.entity';
 import { Repository } from 'typeorm';
-import { Contact } from './entities/contacts.entity';
+import { Contact } from './contacts.entity';
 import { CreateContactDTO } from './dto/create-contact.dto';
 import { Response } from 'express';
 import { classToPlain } from 'class-transformer';

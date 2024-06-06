@@ -3,7 +3,7 @@ import { HttpException, Injectable, Post } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
-import { User } from 'src/users/entities/users.entity';
+import { User } from 'src/users/users.entity';
 import { Repository } from 'typeorm';
 import { LoginDTO } from './dto/login.dto';
 

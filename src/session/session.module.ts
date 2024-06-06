@@ -8,11 +8,11 @@ import { SessionService } from './session.service';
 import { SessionController } from './session.controller';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { User } from 'src/users/entities/users.entity';
+import { User } from 'src/users/users.entity';
 import { UsersModule } from 'src/users/users.module';
 import { VerifyTokenMiddleware } from './session.middleware';
 import { ContactsModule } from 'src/contacts/contacts.module';
-import { Contact } from 'src/contacts/entities/contacts.entity';
+import { Contact } from 'src/contacts/contacts.entity';
 
 @Module({
   imports: [TypeOrmModule.forFeature([User]), UsersModule, ContactsModule],
